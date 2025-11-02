@@ -1,0 +1,82 @@
+[
+  {
+    "id": 3,
+    "title": "Lannister-news",
+    "docente": "Solorzano Danith",
+    "curso": "Proyecto Integrador 1",
+    "description": "Proyecto de scraping de noticias",
+    "comentarios": "se preguntó sobre el github actions, pay to win y se respondió que no es pay to win, no se realizan compras en el juego, se exaltó el trabajo del equipo porque logró congeniar la parte académica con la técnica, ¿Por qué fue importante el uso de cálculo aleatorio?",
+    "fecha_y_hora": "2025-10-28 10:00:00",
+    "expositores": "Sergio Sanabria, Wilson Velandia, Stiven Pabon, Samuel Arango, Juan Guerrero"
+  },
+  {
+    "title": "testt",
+    "docente": "ing. Lenin Javier",
+    "curso": "test",
+    "fecha_y_hora": "2025-10-29T00:39",
+    "expositores": "test\r\ntestt\r\nteestt\r\ntestetes",
+    "description": "testeteste",
+    "comentarios": "testestse",
+    "id": 4
+  },
+  {
+    "title": "testt",
+    "docente": "test",
+    "curso": "test",
+    "fecha_y_hora": "2025-10-29T00:44",
+    "expositores": "test\r\ntest, test, test",
+    "description": "test",
+    "comentarios": "test",
+    "id": 5
+  },
+  {
+    "title": "Rana shoes ",
+    "docente": "Javier Enrique Lizarazo Rueda",
+    "curso": "Ingeniería de Software",
+    "fecha_y_hora": "2025-10-29T10:15",
+    "expositores": "Andrés Florez\r\nAngy Mejía\r\nCristian Chaparro\r\nDaniel Hoguín\r\nJavier Salazar\r\nSantiago Sanabria",
+    "description": "Sistematización de operaciones en la empresa de calzado Rana Shoes. Arquitectura por capas incorporando principios de MVC.",
+    "comentarios": "Objetivo general demasiado largo. Diferencia de extend e include, la sintaxis está mal pues el extend debe apuntar al contrario del include. Faltó ser más especificos en los requerimientos presentados. Que version de ángular usaron? Por qué lo usaron? (No responden). Mal diseño del diagrama de clases, no tienen atributos ni metodos, tiene asociaciones que no expresan nada. Usaron el patrón de diseño factory",
+    "id": 6
+  },
+  {
+    "title": "Veterinaria & SPA SOS",
+    "docente": "Javier Enrique Lizarazo Rueda",
+    "curso": "Ingeniería de Software",
+    "fecha_y_hora": "2025-10-29T11:00",
+    "expositores": "David Florez\r\nDavid Carvajal\r\nJosé Mora\r\nJuan Ordoñez\r\nJuan Tellez\r\nJuan Arenas\r\nLibardo Bravo",
+    "description": "Sistema para unificar la gestion de inventarios, ventas, clientes, proveedores e insumos, diferenciando permisos del usuario. Diseñar y gestionar un producto minimo variable de un sistema de informacion. Usaron java postgreSQL logo vik, star uml, plantuml, figma. Metodología espiral. Usaron patrones singleton y repository. Se diseño el modelo de base de datos en MySQL.",
+    "comentarios": "Cuantas reuniones tuvieron con el cliente? -5 reuniones. Realizaron pruebas unitarias, de estrés y de integración. Se realizaron recomendaciones sobre las diapositivas como reducir el texto en las diapositivas. Buena repartición de trabajo para gestionar tantos integrantes. Se repitió mucho el inicio de sesión. eligieron la arquitectura para ampliar la lógica, y repartir las tareas, cuenta con solo 2 usuarios, empleado y cliente. En general muy buen trabajo",
+    "id": 7
+  },
+  {
+    "title": "Aviatech",
+    "docente": "Javier Enrique Lizarazo Rueda",
+    "curso": "Ingeniería de Software",
+    "fecha_y_hora": "2025-10-29T11:40",
+    "expositores": "Andrés Sanchez\r\nCarlos Pimiento\r\nIsabella Montoya\r\nJose Porras\r\nMelissa Peterson\r\nSimón Perez\r\n",
+    "description": "Aplicación de escritorio para digitalizar y centralizar los procesos de la avícola San Miguel. Registrar y organizar la información de inventarios para la producción de la avícola. ",
+    "comentarios": "Arquitectura Vista-Controlador, usaron patrones de diseño Observer y Factory, base de datos relacional. Utilizaron MySQL, Intellij, Star UML, java, Github y scene Builder, Metodología de prototipado. No hay buenos diagramas UML. ",
+    "id": 8
+  },
+  {
+    "title": "Aviatech",
+    "docente": "Javier Enrique Lizarazo Rueda",
+    "curso": "Ingeniería de Software",
+    "fecha_y_hora": "2025-10-29T11:40",
+    "expositores": "Andrés Sanchez\r\nCarlos Pimiento\r\nIsabella Montoya\r\nJose Porras\r\nMelissa Peterson\r\nSimón Perez\r\n",
+    "description": "Aplicación de escritorio para digitalizar y centralizar los procesos de la avícola San Miguel. Registrar y organizar la información de inventarios para la producción de la avícola. ",
+    "comentarios": "Arquitectura Vista-Controlador, usaron patrones de diseño Observer y Factory, base de datos relacional. Utilizaron MySQL, Intellij, Star UML, java, Github y scene Builder, Metodología de prototipado. No hay buenos diagramas UML. ",
+    "id": 9
+  },
+  {
+    "title": "BIOCONECTA S.A.S",
+    "docente": "Sandra Pilar Reyes Hernandez",
+    "curso": "Proyecto Integrador 1",
+    "fecha_y_hora": "2025-10-29T14:40",
+    "expositores": "Caren Calderon\r\nIvan Lopez\r\nKaren Adarme\r\nMiguel Vargas\r\nSebastian Neyra",
+    "description": "Descripción pendiente",
+    "comentarios": "",
+    "id": 10
+  }
+]
