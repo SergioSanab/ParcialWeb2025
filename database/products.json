@@ -39,16 +39,7 @@
     "comentarios": "Arquitectura Vista-Controlador, usaron patrones de diseño Observer y Factory, base de datos relacional. Utilizaron MySQL, Intellij, Star UML, java, Github y scene Builder, Metodología de prototipado. No hay buenos diagramas UML. ",
     "id": 8
   },
-  {
-    "title": "Aviatech",
-    "docente": "Javier Enrique Lizarazo Rueda",
-    "curso": "Ingeniería de Software",
-    "fecha_y_hora": "2025-10-29T11:40",
-    "expositores": "Andrés Sanchez\r\nCarlos Pimiento\r\nIsabella Montoya\r\nJose Porras\r\nMelissa Peterson\r\nSimón Perez\r\n",
-    "description": "Aplicación de escritorio para digitalizar y centralizar los procesos de la avícola San Miguel. Registrar y organizar la información de inventarios para la producción de la avícola. ",
-    "comentarios": "Arquitectura Vista-Controlador, usaron patrones de diseño Observer y Factory, base de datos relacional. Utilizaron MySQL, Intellij, Star UML, java, Github y scene Builder, Metodología de prototipado. No hay buenos diagramas UML. ",
-    "id": 9
-  },
+
   {
     "title": "BIOCONECTA S.A.S",
     "docente": "Sandra Pilar Reyes Hernandez",
@@ -57,6 +48,6 @@
     "expositores": "Caren Calderon\r\nIvan Lopez\r\nKaren Adarme\r\nMiguel Vargas\r\nSebastian Neyra",
     "description": "Descripción pendiente",
     "comentarios": "",
-    "id": 10
+    "id": 9
   }
 ]
