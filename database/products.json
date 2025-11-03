@@ -10,26 +10,6 @@
     "expositores": "Sergio Sanabria, Wilson Velandia, Stiven Pabon, Samuel Arango, Juan Guerrero"
   },
   {
-    "title": "testt",
-    "docente": "ing. Lenin Javier",
-    "curso": "test",
-    "fecha_y_hora": "2025-10-29T00:39",
-    "expositores": "test\r\ntestt\r\nteestt\r\ntestetes",
-    "description": "testeteste",
-    "comentarios": "testestse",
-    "id": 4
-  },
-  {
-    "title": "testt",
-    "docente": "test",
-    "curso": "test",
-    "fecha_y_hora": "2025-10-29T00:44",
-    "expositores": "test\r\ntest, test, test",
-    "description": "test",
-    "comentarios": "test",
-    "id": 5
-  },
-  {
     "title": "Rana shoes ",
     "docente": "Javier Enrique Lizarazo Rueda",
     "curso": "Ingeniería de Software",
