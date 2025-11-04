@@ -1,5 +1,5 @@
 import Product from '../types/Product'
-import products from '../../../database/products.json'
+import { IProductRepository } from '../repository/IProductRepository'
 
 type PaginatedProducts = {
   products: Product[],
@@ -8,70 +8,57 @@ type PaginatedProducts = {
 }
 
 export default class ProductModel {
+  constructor(private readonly productRepository: IProductRepository) {}
 
-  private readonly fetchAllProducts = async (): Promise<Product[]> => {
-    const data = products as Product[]
-    if (!data) {
-      throw new Error('No products found in JSON')
-    }
-    return data
-  }
+  readonly fetchPaginatedProducts = async (
+    page: number,
+    limit: number
+  ): Promise<PaginatedProducts> => {
+    const allProducts = await this.productRepository.fetchAll()
 
-  readonly fetchPaginatedProducts = async (page: number, limit: number): Promise<PaginatedProducts> => {
+    const totalPages = Math.ceil(allProducts.length / limit)
+    const offset = (page - 1) * limit
+    const products = allProducts.slice(offset, offset + limit)
 
-    const allProducts = products as Product[]
-    if (!allProducts) {
-      throw new Error('No products found')
-    }
-
-    const totalProducts = allProducts.length
-    const totalPages = Math.ceil(totalProducts / limit) 
-
-    if (page < 1) {
-      page = 1
-    }
-    if (page > totalPages && totalPages > 0) {
-      page = totalPages
-    }
-    if (totalPages === 0) {
-      page = 1; 
-    }
-    const startIndex = (page - 1) * limit
-    const endIndex = page * limit
-    const paginatedProducts = allProducts.slice(startIndex, endIndex)
     return {
-      products: paginatedProducts,
+      products,
       currentPage: page,
-      totalPages: totalPages
+      totalPages
     }
   }
 
-  readonly fetchProductById = async (id: number): Promise<Product | undefined> => {
-    const allProducts = products as Product[]
-    if (!allProducts) {
-      throw new Error('No products found')
-    }
-    return allProducts.find(p => p.id === id)
+  /**
+   * Lógica de negocio para buscar por ID
+   */
+  readonly fetchProductById = async (
+    id: number
+  ): Promise<Product | undefined> => {
+    // Simplemente delega al repositorio
+    return this.productRepository.fetchById(id)
   }
 
+  /**
+   * Lógica de negocio para buscar por nombre
+   */
   readonly searchProductsByName = async (
     query: string
   ): Promise<Product[]> => {
+    // 1. Obtiene TODOS los productos
+    const allProducts = await this.productRepository.fetchAll()
+    
     if (!query) {
-      return []
+      return [] // No devuelve nada si la búsqueda está vacía
     }
-    const allProducts = await this.fetchAllProducts()
-    const normalizedQuery = query.toLowerCase()
 
-    return allProducts.filter((product) => {
-      const titleMatch = product.title.toLowerCase().includes(normalizedQuery)
-      const teacherMatch = product.docente.toLowerCase().includes(normalizedQuery)
-      const courseMatch = product.curso.toLowerCase().includes(normalizedQuery)
-      const contentMatch = product.description.toLowerCase().includes(normalizedQuery)
-      const studentMatch = product.expositores.toLowerCase().includes(normalizedQuery)
-
-      return titleMatch || teacherMatch || courseMatch || contentMatch || studentMatch
-    }).sort((a, b) => b.id - a.id)
+    // 2. Lógica de filtrado
+    const lowerCaseQuery = query.toLowerCase()
+    return allProducts.filter(product =>
+      product.title.toLowerCase().includes(lowerCaseQuery) ||
+      product.docente.toLowerCase().includes(lowerCaseQuery) ||
+      product.curso.toLowerCase().includes(lowerCaseQuery) ||
+      product.description.toLowerCase().includes(lowerCaseQuery) ||
+      product.expositores.toLowerCase().includes(lowerCaseQuery)
+    )
   }
 
 }

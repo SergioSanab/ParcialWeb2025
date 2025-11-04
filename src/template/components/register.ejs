@@ -20,7 +20,7 @@
                 <div class="alert alert-success" role="alert">
                 Your message has been sent successfully!
                 </div>
-                 <button onclick="location.href='http://localhost:1888/products/v1.0/list'" type="button" class="btn-close" ></button>
+                 <button onclick="location.href='/products/v1.0/list'" type="button" class="btn-close" ></button>
                 <% } else { %>
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8">
@@ -28,7 +28,7 @@
           <div class="card-body p-4 p-md-5">
             <h4 class="card-title mb-4 text-center">Registro de Proyecto</h4>
 
-            <form id="projectForm" class="needs-validation" novalidate action="http://localhost:1888/Registers/v1.0/Register" method="post">
+            <form id="projectForm" class="needs-validation" novalidate action="/Registers/v1.0/Register" method="post">
 
               <div class="mb-3">
                 <label for="title" class="form-label">Título del Proyecto</label>
@@ -78,7 +78,7 @@
               </div>
 
               <div class="d-grid pt-2">
-                <button class="btn btn-primary btn-lg" type="submit" formaction="http://localhost:1888/Registers/v1.0/Register">Registrar Proyecto</button>
+                <button class="btn btn-primary btn-lg" type="submit" formaction="/Registers/v1.0/Register">Registrar Proyecto</button>
               </div>
             </form>
 

@@ -1,11 +1,11 @@
 {
-  "name": "mvt---martes-4pm",
+  "name": "sergio--sanabria",
   "version": "1.0.0",
   "description": "",
   "main": "Server.js",
   "scripts": {
     "build": "rm -rf ./build && tsc",
-    "dev": "tsnd ./src/Server.ts",
+    "dev": "tsnd ./src/Index.ts",
     "test": "jest --verbose",
     "test-c": "jest --coverage --runInBand",
     "test-v": "jest --verbose --runInBand --detectOpenHandles",
