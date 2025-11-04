@@ -6,7 +6,7 @@ export default class RegisterView {
   constructor(private readonly registerModel: RegisterModel) {}
 
   readonly registerForm = async (_req: Request, res: Response) => {
-    res.status(200).render('register', { })
+    res.status(200).render('./components/register', { })
   }
 
   readonly createRegister = async (
