@@ -9,5 +9,10 @@ export default class ProductModel {
     }
     return data
   }
+
+  readonly fetchProductById = async (id: number): Promise<Product | undefined> => {
+  const allProducts = await this.fetchProducts()
+  return allProducts.find(p => p.id === id)
+}
   
 }

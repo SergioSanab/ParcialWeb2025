@@ -13,6 +13,7 @@ import RegisterModel from './register/model/RegisterModel'
 import HomeView from './home/view/HomeView'
 import HomeRouter from './home/router/HomeRouter'
 
+
 export default class Server {
   private readonly app: Application
 
@@ -21,7 +22,7 @@ export default class Server {
     private readonly productRouter: ProductRouter,
     private readonly contactRouter: ContactRouter,
     private readonly errorRouter: ErrorRouter,
-    private readonly homeRouter: HomeRouter
+    private readonly homeRouter: HomeRouter,
   ) {
     this.app = express()
     this.configure()
@@ -68,4 +69,5 @@ const server = new Server(
   new ErrorRouter(new ErrorView()),
   new HomeRouter(new HomeView())
 )
+
 server.start()

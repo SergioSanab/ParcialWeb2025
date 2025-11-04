@@ -6,5 +6,5 @@ export default interface Product {
   description: string,
   comentarios: string,
   fecha_y_hora: string,
-  expositores: string[],
+  expositores: string,
 }

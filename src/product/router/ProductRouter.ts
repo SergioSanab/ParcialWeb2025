@@ -11,5 +11,6 @@ export default class ProductRouter {
 
   readonly routes = () => {
     this.router.get('/v1.0/list', this.productView.getProductList)
+    this.router.get('/v1.0/detail/:id', this.productView.getProductDetail)
   }
 }
